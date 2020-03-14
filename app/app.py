@@ -58,7 +58,7 @@ for article, title in zip(ARTICLES, TITLES):
 
     
 ### Load example images for article preview thumbnails
-example_images = ["/static/images/{}".format(x) for x in os.listdir("app/static/images")]
+example_images = ["/static_recommendations/images/{}".format(x) for x in os.listdir("app/static/images")]
 
 
 ### Functions for populating the dicts from the RecommenderEngine into the Article Recommendations
@@ -415,8 +415,9 @@ BODY = dbc.Container(
 
 
 app = dash.Dash(__name__, 
-                external_stylesheets=["/static/css/bootstrap.min.css"], 
+                external_stylesheets=["/static_recommendations/css/bootstrap.min.css"], 
                 url_base_pathname="/recommendations/",
+                assets_folder="static_recommendations",
                 meta_tags=[
                     {"name": "viewport", "content": "width=device-width, initial-scale=1.0"}
                 ],
