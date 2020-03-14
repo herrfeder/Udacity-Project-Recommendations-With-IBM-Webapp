@@ -12,6 +12,7 @@ RUN pip install dash-html-components
 RUN pip install dash-bootstrap-components
 RUN pip install dash-core-components
 RUN pip install plotly==4.5.0
+RUN pip install wordcloud
 
 RUN pip install gunicorn
 

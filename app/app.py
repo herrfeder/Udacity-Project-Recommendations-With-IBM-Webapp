@@ -175,7 +175,7 @@ NAVBAR = dbc.Navbar(
                             dbc.DropdownMenuItem("LinkedIn",
                                         href="https://www.linkedin.com/in/davidlassig/"),
                             dbc.DropdownMenuItem("Github Repo", 
-                                        href="#"),
+                                        href="https://github.com/herrfeder/Udacity-Project-Recommendations-With-IBM-Webapp.git"),
                           
                         ],
                         nav=False,
@@ -412,6 +412,8 @@ BODY = dbc.Container(
         
 
 ### Init webapp ###
+
+
 app = dash.Dash(__name__, 
                 external_stylesheets=["/static/css/bootstrap.min.css"], 
                 url_base_pathname="/recommendations/",
