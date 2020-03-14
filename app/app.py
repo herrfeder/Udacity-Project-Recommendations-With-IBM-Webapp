@@ -19,8 +19,8 @@ import os
 import random
 from dash.dependencies import Output, Input, State
 from dateutil import relativedelta
-from plotlywordcloud import plotly_wordcloud
-from recommendengine import Recommender
+from app.plotlywordcloud import plotly_wordcloud
+from app.recommendengine import Recommender
 
 
 ### STATIC DATA PATHS ###
@@ -58,7 +58,7 @@ for article, title in zip(ARTICLES, TITLES):
 
     
 ### Load example images for article preview thumbnails
-example_images = ["/static/images/{}".format(x) for x in os.listdir("static/images")]
+example_images = ["/static/images/{}".format(x) for x in os.listdir("app/static/images")]
 
 
 ### Functions for populating the dicts from the RecommenderEngine into the Article Recommendations
