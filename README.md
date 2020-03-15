@@ -1,6 +1,6 @@
 # Recommendations With IBM Webapp
 
-This repository is a part of https://github.com/herrfeder/DataScientist/tree/master/Project_04_Recommendations_With_IBM .
+This repository is a part of https://github.com/herrfeder/DataScientist/tree/master/Project_04_Recommendations_With_IBM.
 It serves as a submodule for modular hosting of the webapp for this project.
 
 ## Screenshots

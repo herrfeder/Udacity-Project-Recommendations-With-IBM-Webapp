@@ -417,7 +417,6 @@ BODY = dbc.Container(
 app = dash.Dash(__name__, 
                 external_stylesheets=[dbc.themes.BOOTSTRAP], 
                 url_base_pathname="/recommendations/",
-                assets_folder="static_recommendations",
                 meta_tags=[
                     {"name": "viewport", "content": "width=device-width, initial-scale=1.0"}
                 ],
